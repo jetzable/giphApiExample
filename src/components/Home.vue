@@ -42,7 +42,7 @@ this.doggos.push(gifObj)
 <template>
   <div class="container">
     <h1 class="title">I feel Great!!!</h1>
-    <div class="grid">
+    <div class="grid" v-if="doggos.length > 0">
         <video v-for="gif in doggos" :key="gif.id" :src="gif.url" autoplay loop class="grid-item"></video>
     </div>
   </div>
@@ -60,7 +60,8 @@ this.doggos.push(gifObj)
 }
 .grid{
   margin: 1rem;
-  text-align: center
+  text-align: center;
+  height: 100%;
 }
 .grid-item{
   padding: .5rem;

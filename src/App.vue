@@ -11,5 +11,7 @@ html, body{
 }
 #app{
   font-family: 'Lexend Peta', sans-serif;
+  height: 100%;
+  background-color: black;
 }
 </style>
